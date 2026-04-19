@@ -1,0 +1,22 @@
+{
+    "disease_confirmation": "Confirmed",
+    "description": "Tomato Late Blight, caused by the oomycete Phytophthora infestans, is a destructive disease that affects leaves, stems, and fruits. It thrives in cool, moist conditions and spreads rapidly through spores. Symptoms include dark, water-soaked lesions on leaves and stems, often with a white, fuzzy mold on the undersides.",
+    "organic_treatment": [
+        "Apply copper-based sprays (e.g., Bordeaux mixture) weekly as a preventive measure.",
+        "Use neem oil or potassium bicarbonate sprays to suppress spore germination.",
+        "Remove and destroy infected plant debris to prevent spore spread.",
+        "Improve air circulation by pruning dense foliage to reduce humidity."
+    ],
+    "chemical_treatment": [
+        "Apply systemic fungicides containing chlorothalonil or mancozeb at the first sign of infection.",
+        "Use propiconazole or fludioxonil for foliar applications, following label instructions.",
+        "Rotate fungicides to prevent resistance development."
+    ],
+    "prevention": [
+        "Plant resistant tomato varieties if available in your region.",
+        "Avoid overhead irrigation; water at the base of plants to keep foliage dry.",
+        "Space plants adequately to ensure good air circulation.",
+        "Remove volunteer tomato plants and crop residues after harvest."
+    ],
+    "note": "Late Blight spreads rapidly in wet conditions. Immediate action is critical to prevent total crop loss. Monitor weather forecasts and apply preventive treatments during periods of high humidity or rain."
+}
