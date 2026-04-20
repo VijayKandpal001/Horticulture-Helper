@@ -12,7 +12,8 @@ COPY app ./app
 EXPOSE 8000 8501
 
 # CMD ["sh", "-c", "uvicorn app.api:app --host 0.0.0.0 --port 8000 & streamlit run app/main.py --server.address 0.0.0.0 --server.port 8501"]
-CMD ["sh", "-c", "uvicorn app.api:app --host 0.0.0.0 --port 8000 & streamlit run app/main.py --server.address 0.0.0.0 --server.port $PORT"]
+# CMD ["sh", "-c", "uvicorn app.api:app --host 0.0.0.0 --port 8000 & streamlit run app/main.py --server.address 0.0.0.0 --server.port $PORT"]
+CMD sh -c "uvicorn app.api:app --host 0.0.0.0 --port 8000 & sleep 5 && streamlit run app/main.py --server.address 0.0.0.0 --server.port $PORT"
 
 
 
