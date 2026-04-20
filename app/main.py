@@ -9,7 +9,7 @@ os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
 import tensorflow as tf
 import streamlit as st
 
-API_URL = "http://localhost:8000"
+API_URL = "https://horticulture-helper-production-d868.up.railway.app"
 
 working_dir = os.path.dirname(os.path.abspath(__file__))
 # model_path = "app/trained_model/fruits_disease_prediction_model_updated.h5"
