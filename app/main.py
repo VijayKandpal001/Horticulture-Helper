@@ -9,9 +9,11 @@ os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
 import tensorflow as tf
 import streamlit as st
 
+API_URL = "http://localhost:8000"
 
 working_dir = os.path.dirname(os.path.abspath(__file__))
-model_path = "app/trained_model/fruits_disease_prediction_model_updated.h5"
+# model_path = "app/trained_model/fruits_disease_prediction_model_updated.h5"
+model_path = os.path.join(working_dir, "trained_model", "fruits_disease_prediction_model_updated.h5")
 model = tf.keras.models.load_model(model_path)
 # model = load_model(model_path)
 print("Model loaded successfully.")
@@ -50,7 +52,7 @@ if uploaded_img is not None:
         if st.button("Classify"):
             uploaded_img.seek(0)
             response = requests.post(
-                "http://127.0.0.1:8000/predict",
+               f"{API_URL}/predict",
                 files={"file": uploaded_img}
             )
 
@@ -63,7 +65,7 @@ if uploaded_img is not None:
     # st.write("INFO...")
     if 'result' in st.session_state:
         response = requests.get(
-            "http://127.0.0.1:8000/treatment",
+            f"{API_URL}//treatment",
             params={
                 "disease": st.session_state.result['prediction'],
                 "confidence_score": st.session_state.result['confidence']
