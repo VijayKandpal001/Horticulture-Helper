@@ -6,7 +6,7 @@ load_dotenv()
 from langchain.chat_models import init_chat_model
 
 # cred
-os.environ["GROQ_API_KEY"]=os.getenv("GROQ_API_KEY")
+# os.environ["GROQ_API_KEY"]=os.getenv("GROQ_API_KEY")
 
 # initializing the model
 modelgroq=init_chat_model("groq:qwen/qwen3-32b")
