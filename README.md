@@ -41,7 +41,7 @@ Horticulture Helping Hand is an intelligent system designed to:
 
 ### Deployment
 - **Docker** - Containerization (Python 3.12-slim base)
-- **Railway** - Cloud deployment platform (or similar)
+- **Render** - Cloud deployment platform (or similar)
 - **Uvicorn** - ASGI server for FastAPI
 
 ## 📁 Project Structure
